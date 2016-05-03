@@ -79,6 +79,14 @@
 % To use align and gather functions
 \usepackage{amsmath}
 \usepackage{mathtools}
+\usepackage{tocloft} % the tocloft package lets you redefine the Table of Contents (ToC)
+  \renewcommand\cftchappresnum{Chapter } % prefix "Chapter " to chapter number in ToC
+  \renewcommand{\cftdot}{}
+  \cftsetindents{chapter}{0em}{8em}      % set amount of indenting
+  \cftsetindents{section}{2em}{6em}
+  \cftsetindents{subsection}{2em}{6em}
+  \cftsetindents{subsubsection}{2em}{6em}
+
 % For URL and other links
 \usepackage{hyperref}
 %              this is for the list of symbols page, if desired
