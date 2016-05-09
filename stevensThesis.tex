@@ -99,6 +99,19 @@
 \fancyhead[L,R]{helv \thepage}
 \setlength{\headheight}{15.2pt}     %%test this
 
+% Sometimes the Tablo of Contents and List of Figures can be set as default plain page settings by the packages.
+% Override plain settings for ToC page
+\fancypagestyle{plain}{
+	\fancyhf{} % clear all header and footer fields
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\fancyhead[RO]{\thepage}
+	\fancyhead[LE]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+
 %\fancyhead[LE,RO]{\thepage\hspace{2em}\footnotesize{\leftmark}}  % try this to move over header
 
 \addtolength{\voffset}{-4em}   								% May2009 added this to move page number up a bit
